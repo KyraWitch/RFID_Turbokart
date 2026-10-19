@@ -1,0 +1,34 @@
+Arduino parts:
+RFID Sensor
+RBG stop light module/LCD 
+Bluetooth module
+Passive buzzer module
+
+
+Code:
+RFID Check - Options:
+- Database: Arduino RFID -> trigger -> Something to handle requests -> Does code match? -> If statement Bool True == match / Bool False == MisMatch
+- RFID brick -> Bool match or mismatch -> answer
+
+Getting Rfid/Qr Code - Options:
+Website order -> qr code on website -> Scan QR -> arduino answer
+App order -> RFID -> Arduino 
+Website order -> RFID -> Arduino 
+App order -> QR -> answer
+
+Link - Options:
+Arduino -> Wifi -> API/Local -> Wifi -> Arduino
+Arduino -> BlueTooth -> API/Local -> Bluetooth -> Arduino
+Arduino -> Wired -> local -> Wired -> arduino
+
+Websie link - Options: 
+Website order -> api -> database -> Trigger RFID -> Arduino -> Match? -> Arduino answer
+Website order -> API -> Database -> RFID -> Api/local -> match? -> Arduino Answer 
+
+
+Arduino Trigger - False/True:
+
+True:
+RFID -> Match -> RGB Green - LCD: Authorized - Delay 5s -> Reset
+False:
+RFID -> Mismatch -> Buzzer trigger - RGB Red - LCD: CANNOT READ/UNAUTHORIZED -> Delay 2s -> reset
