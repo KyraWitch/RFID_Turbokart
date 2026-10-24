@@ -12,6 +12,11 @@
 
 //----Serial ints----
 
+//----Pin mapping----
+//RFID reader pins
+//Bluetooth pins
+//LCD pins
+
 //Libraries
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
