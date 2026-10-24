@@ -8,7 +8,6 @@
 // Read up on RFID
 // Add RFID reader to project
 // Add RFID card read to serial output
-// Add RFID library to project
 
 //----Serial ints----
 
@@ -20,6 +19,7 @@
 //Libraries
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include <rfid1.h>
 
 //-------------- Pin Assignment ----------------
   //Colour pins
