@@ -1,3 +1,17 @@
+//To do!
+
+//----Bluetooth----
+// Add serial output for RFID card read
+// Add serial input for bool if card is authorized or not
+
+//----RFID----
+// Read up on RFID
+// Add RFID reader to project
+// Add RFID card read to serial output
+// Add RFID library to project
+
+//----Serial ints----
+
 //Libraries
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
